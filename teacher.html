@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Database - Teacher Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar mb-5 has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <img src="./images/database.png" height="28">
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="./terms.html">
+                    Terms
+                </a>
+                <a class="navbar-item" href="./classes.html">
+                    Classes
+                </a>
+                <a class="navbar-item" href="./teachers.html">
+                    Teachers
+                </a>
+                <a class="navbar-item" href="./students.html">
+                    Students
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div>
+                        Daniel Johnson
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-light">
+                            <strong>Logout</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container is-fluid">
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header-title title is-3">ດານີເອນ ຈອນສັນ (Daniel Johnson)</h1>
+                        </div>
+                        <div class="card-content">
+                            <form>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="field">
+                                            <label class="label">Teacher Id</label>
+                                            <div class="control">
+                                                <input disabled class="input" type="text" value="3">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">First Name</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="ດານີເອນ ">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Last Name</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="ຈອນສັນ">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">First Name (English)</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="Daniel">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Last Name (English)</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="Johnson">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Birthday</label>
+                                            <div class="control">
+                                                <input class="input" type="date" value="1994-05-25">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="field">
+                                            <label class="label">Gender</label>
+                                            <div class="control">
+                                                <div class="select">
+                                                    <select>
+                                                        <option selected>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Phone Number</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="803 840 5077">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Address</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="Stephen Blvd">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Occupation or School</label>
+                                            <div class="control">
+                                                <input class="input" type="text" value="Davidson Water">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label class="label">Application Date</label>
+                                            <div class="control">
+                                                <input class="input" type="date" value="2024-02-21">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button is-primary">
+                                    <span class="icon-text">
+                                        <span class="icon">
+                                            <i class="fa fa-save" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Save Changes</span>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header-title title is-3">Current Classes</h1>
+                        </div>
+                        <div class="card-content">
+                            <table class="table is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Term</th>
+                                        <th>Students</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="./class.html">Algebra 1</a></td>
+                                        <td>Fall 2024</td>
+                                        <td>7</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header-title title is-3">Past Classes</h1>
+                        </div>
+                        <div class="card-content">
+                            <table class="table is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Term</th>
+                                        <th>Students</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="./class.html">Algebra 1</a></td>
+                                        <td>Spring 2024</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
