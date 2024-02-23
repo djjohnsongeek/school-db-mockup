@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>School Database - Class Details</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./images/database.png">
 </head>
 
@@ -49,7 +53,7 @@
     <main>
         <div class="container is-fluid">
             <div class="columns">
-                <div class="column is-6">
+                <div class="column">
                     <div class="block">
                         <div class="card">
                             <div class="card-header">
@@ -60,7 +64,7 @@
                                     <div class="field">
                                         <label class="label">Class Name</label>
                                         <div class="control">
-                                            <input class="input" type="text" value="Geometry 1">
+                                            <input class="input" type="text" value="Algebra 1">
                                         </div>
                                     </div>
                                     <div class="field">
@@ -110,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-6">
+                <div class="column">
                     <div class="block">
                         <div class="card">
                             <div class="card-header">
@@ -132,8 +136,10 @@
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
-                                                <th>Attendance</th>
-                                                <th>Current Grade</th>
+                                                <th>
+                                                    Attendance
+                                                </th>
+                                                <th>Grade</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -141,10 +147,21 @@
                                             <tr>
                                                 <td>
                                                     <a href="./student.html">
-                                                        ອາລານາ ພົນນາສາ (Alana Phonasa)
+                                                        <span>ອາລານາ ພົນນາສາ</span>
+                                                        <span>(Alana Phonasa)</span>
                                                     </a>
                                                 </td>
-                                                <td>Present: 10 | Absent: 1 | Tardy: 1</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: 10
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: 1
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: 1
+                                                    </span>
+                                                </td>
                                                 <td>85</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -157,10 +174,21 @@
                                             <tr>
                                                 <td>
                                                     <a href="./student.html">
-                                                        ເກສອນ ໄຊຍະວົງ (Kesone Sayavong)
+                                                        <span>ເກສອນ ໄຊຍະວົງ</span>
+                                                        <span>(Kesone Sayavong)</span>
                                                     </a>
                                                 </td>
-                                                <td>Present: 8 | Absent: 1 | Tardy: 3</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: 8
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: 1
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: 3
+                                                    </span>
+                                                </td>
                                                 <td>90</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -176,7 +204,17 @@
                                                         Student 3
                                                     </a>
                                                 </td>
-                                                <td>Present: ? | Absent: ? | Tardy: ?</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: ?
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: ?
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: ?
+                                                    </span>
+                                                </td>
                                                 <td>?</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -192,7 +230,17 @@
                                                         Student 4
                                                     </a>
                                                 </td>
-                                                <td>Present: ? | Absent: ? | Tardy: ?</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: ?
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: ?
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: ?
+                                                    </span>
+                                                </td>
                                                 <td>?</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -208,7 +256,17 @@
                                                         Student 5
                                                     </a>
                                                 </td>
-                                                <td>Present: ? | Absent: ? | Tardy: ?</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: ?
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: ?
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: ?
+                                                    </span>
+                                                </td>
                                                 <td>?</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -224,7 +282,17 @@
                                                         Student 6
                                                     </a>
                                                 </td>
-                                                <td>Present: ? | Absent: ? | Tardy: ?</td>
+                                                <td>
+                                                    <span class="tag is-success">
+                                                        P: ?
+                                                    </span>
+                                                    <span class="tag is-danger">
+                                                        A: ?
+                                                    </span>
+                                                    <span class="tag is-warning">
+                                                        T: ?
+                                                    </span>
+                                                </td>
                                                 <td>?</td>
                                                 <td>
                                                     <button class="button is-danger" title="Remove this student from the class.">
@@ -243,7 +311,7 @@
                 </div>
             </div>
             <div class="columns">
-                <div class="column is-6">
+                <div class="column">
                     <div class="block">
                         <div class="card">
                             <div class="card-header">
@@ -470,7 +538,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="column is-6">
+                <div class="column">
                     <div class="block">
                         <div class="card">
                             <div class="card-header">
